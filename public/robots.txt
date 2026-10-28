@@ -1,0 +1,5 @@
+# SEO: tells Google it may visit every page, and where the sitemap is
+User-agent: *
+Allow: /
+
+Sitemap: https://your-portfolio.vercel.app/sitemap.xml

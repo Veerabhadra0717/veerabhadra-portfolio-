@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<!-- SEO: lang tells Google the page language -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<!-- SEO: makes the site mobile-friendly -->
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<!-- SEO: TITLE = the blue headline in Google (50–60 characters) -->
+<title>Veerabhadra R – Learning Product Developer, Bangalore</title>
+
+<!-- SEO: DESCRIPTION = the grey text under the headline (about 150 characters) -->
+<meta name="description" content="Veerabhadra R is a Bangalore web developer at USDC Global who has built 150+ interactive, SCORM-compliant learning modules with JavaScript and Django.">
+
+<!-- SEO: CANONICAL = the main address of this page. Change it to your real link. -->
+<link rel="canonical" href="https://your-portfolio.vercel.app/">
+
+<!-- SEO: OPEN GRAPH = how your link looks when shared on WhatsApp or LinkedIn -->
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Veerabhadra R – Learning Product Developer">
+<meta property="og:description" content="Web developer in Bangalore building interactive learning modules with JavaScript, HTML, CSS, and Django.">
+<meta property="og:url" content="https://your-portfolio.vercel.app/">
+<meta property="og:image" content="https://your-portfolio.vercel.app/og-image.png">
+
+<!-- SEO: TWITTER / X CARD = how your link looks when shared on X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Veerabhadra R – Learning Product Developer">
+<meta name="twitter:description" content="Web developer in Bangalore building interactive learning modules.">
+<meta name="twitter:image" content="https://your-portfolio.vercel.app/og-image.png">
+
+<!-- SEO: FAVICON = the small icon in the browser tab and in Google results -->
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#1E1B4F">
+
+<!-- SEO: STRUCTURED DATA = tells Google "this page is about a person" -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Veerabhadra R",
+  "jobTitle": "Developer – Learning Products",
+  "worksFor": { "@type": "Organization", "name": "USDC Global" },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "JAIN University" },
+    { "@type": "CollegeOrUniversity", "name": "RJS First Grade College" }
+  ],
+  "address": { "@type": "PostalAddress", "addressLocality": "Bangalore", "addressCountry": "IN" },
+  "email": "mailto:bhadrav774@gmail.com",
+  "url": "https://your-portfolio.vercel.app/",
+  "sameAs": ["https://www.linkedin.com/in/veera-bhadra-r-34a420257"],
+  "knowsAbout": ["JavaScript", "HTML", "CSS", "Django", "SQL", "Java", "SCORM", "ReactJS", "TypeScript"],
+  "knowsLanguage": ["English", "Tamil", "Kannada", "Hindi", "Telugu"]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --night:#1E1B4F; --night-2:#2A2668; --on-night:#F3F1FF; --on-night-soft:#B9B5E6;
+  --bg:#F5F4FB; --card:#FFFFFF; --ink:#1E1B4F; --soft:#5A5785; --line:#E2E0F0;
+  --amber:#F2B356; --amber-ink:#8A520A; --amber-bg:#FDF0DA;
+  --mint:#3FB28A; --tag:#ECEAF7;
+  --shadow:0 1px 2px rgba(30,27,79,.06),0 8px 24px rgba(30,27,79,.07);
+  color-scheme:light; box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --night:#100E2C; --night-2:#1C1A45; --bg:#16143A; --card:#201E4A; --ink:#EEEDFB; --soft:#ADAADA; --line:#312E66;
+    --amber-ink:#F7C77C; --amber-bg:#3E2C10; --tag:#2B2860; --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.25);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --night:#100E2C; --night-2:#1C1A45; --bg:#16143A; --card:#201E4A; --ink:#EEEDFB; --soft:#ADAADA; --line:#312E66;
+  --amber-ink:#F7C77C; --amber-bg:#3E2C10; --tag:#2B2860; --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.25);
+  color-scheme:dark;
+}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Manrope,system-ui,-apple-system,"Segoe UI",sans-serif;font-size:17px;line-height:1.7}
+a{color:inherit}
+a:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 1.5rem}
+.serif{font-family:"Young Serif",Georgia,serif;font-weight:400}
+
+/* Nav */
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--night);color:var(--on-night);border-bottom:1px solid rgba(255,255,255,.08)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--night);z-index:30}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:64px}
+.logo{display:flex;align-items:center;gap:.6rem;text-decoration:none;font-weight:700}
+.logo i{width:34px;height:34px;border-radius:10px;background:var(--amber);color:#1E1B4F;display:grid;place-items:center;font-style:normal;font-family:"Young Serif",Georgia,serif;font-size:.95rem}
+nav ul{display:flex;gap:.25rem;list-style:none;margin:0;padding:0;font-size:.93rem}
+nav ul a{display:block;text-decoration:none;color:var(--on-night-soft);padding:.4rem .75rem;border-radius:8px}
+nav ul a:hover{color:var(--on-night);background:rgba(255,255,255,.08)}
+
+/* Hero */
+.hero{background:var(--night);color:var(--on-night);position:relative;overflow:hidden;padding:5rem 0 7.5rem}
+.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.09) 1px,transparent 1px);background-size:22px 22px;mask-image:linear-gradient(to bottom,#000 40%,transparent)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:3.5rem;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:.5rem;font-size:.88rem;color:var(--on-night-soft);border:1px solid rgba(255,255,255,.16);padding:.3rem .8rem;border-radius:99px;margin-bottom:1.4rem}
+.pill b{width:8px;height:8px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 4px rgba(63,178,138,.2)}
+h1{font-family:"Young Serif",Georgia,serif;font-weight:400;font-size:clamp(2.6rem,7vw,4.6rem);line-height:1.02;margin:0 0 1.1rem;letter-spacing:-0.015em}
+h1 small{display:block;font-family:Manrope,sans-serif;font-size:clamp(1.05rem,2.4vw,1.3rem);font-weight:500;color:var(--amber);letter-spacing:0;margin-top:.8rem}
+.lead{font-size:1.1rem;color:var(--on-night-soft);margin:0 0 2rem;max-width:50ch}
+.btns{display:flex;gap:.75rem;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:.5rem;text-decoration:none;font-weight:700;padding:.8rem 1.35rem;border-radius:12px;transition:transform .15s ease,background .15s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn.main{background:var(--amber);color:#1E1B4F}
+.btn.ghost{color:var(--on-night);border:1.5px solid rgba(255,255,255,.28)}
+.btn.ghost:hover{background:rgba(255,255,255,.08)}
+
+/* Module card in hero — the signature element */
+.module{background:var(--night-2);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:1.5rem;box-shadow:0 30px 60px rgba(0,0,0,.25);transform:rotate(1.5deg)}
+.module-top{display:flex;align-items:center;gap:1rem;margin-bottom:1.25rem}
+.avatar{width:64px;height:64px;border-radius:16px;display:block;flex:none}
+.module-top h2{font-size:1.1rem;margin:0;font-family:Manrope,sans-serif;font-weight:700}
+.module-top p{margin:0;color:var(--on-night-soft);font-size:.9rem}
+.meter-label{display:flex;justify-content:space-between;font-size:.86rem;color:var(--on-night-soft);margin-bottom:.4rem}
+.meter-label strong{color:var(--on-night)}
+.meter{height:10px;background:rgba(255,255,255,.1);border-radius:99px;overflow:hidden;margin-bottom:1.25rem}
+.meter span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--amber),#FFD592);border-radius:99px;transition:width 1.6s cubic-bezier(.2,.8,.2,1)}
+.checks{list-style:none;margin:0 0 1.25rem;padding:0;display:grid;gap:.45rem;font-size:.92rem}
+.checks li{display:flex;gap:.6rem;align-items:center}
+.checks li::before{content:"";width:18px;height:18px;flex:none;border-radius:6px;background:var(--mint) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5L20 7'/%3E%3C/svg%3E") center/12px no-repeat}
+.checks li.next::before{background:transparent;border:1.5px dashed var(--on-night-soft)}
+.checks li.next{color:var(--on-night-soft)}
+.chiprow{display:flex;flex-wrap:wrap;gap:.4rem}
+.chiprow span{font-size:.8rem;padding:.2rem .6rem;border-radius:7px;background:rgba(255,255,255,.08);color:var(--on-night)}
+
+/* Stats */
+.stats{position:relative;margin-top:-4rem;z-index:2}
+.stats .grid{display:grid;grid-template-columns:repeat(4,1fr);background:var(--card);border-radius:18px;box-shadow:var(--shadow);border:1px solid var(--line)}
+.stat{padding:1.5rem 1.6rem;border-left:1px solid var(--line)}
+.stat:first-child{border-left:0}
+.stat strong{display:block;font-family:"Young Serif",Georgia,serif;font-weight:400;font-size:2.2rem;line-height:1.1}
+.stat span{color:var(--soft);font-size:.9rem}
+
+/* Sections */
+section{padding:5rem 0 0}
+.head{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;margin-bottom:2rem;flex-wrap:wrap}
+h2.title{font-family:"Young Serif",Georgia,serif;font-weight:400;font-size:clamp(1.9rem,4vw,2.5rem);margin:0;line-height:1.1}
+.head p{margin:0;color:var(--soft);max-width:40ch}
+h3{font-size:1.15rem;margin:0 0 .2rem}
+p{margin:0 0 1rem}
+
+/* Timeline */
+.timeline{list-style:none;margin:0;padding:0;position:relative}
+.timeline::before{content:"";position:absolute;left:9px;top:8px;bottom:8px;width:2px;background:var(--line)}
+.timeline > li{position:relative;padding-left:2.75rem;margin-bottom:1.5rem}
+.timeline > li::before{content:"";position:absolute;left:0;top:1.6rem;width:20px;height:20px;border-radius:50%;background:var(--card);border:4px solid var(--amber)}
+.tcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:1.5rem 1.6rem;box-shadow:var(--shadow)}
+.tmeta{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-bottom:.6rem}
+.when{font-size:.85rem;font-weight:700;color:var(--amber-ink);background:var(--amber-bg);padding:.2rem .7rem;border-radius:99px;align-self:flex-start}
+.where{color:var(--soft);margin:0;font-size:.95rem}
+.tcard ul{margin:.4rem 0 0;padding-left:1.1rem;color:var(--soft)}
+.tcard ul li{margin:.2rem 0}
+.badge{display:inline-block;font-size:.78rem;font-weight:700;color:#1E6B50;background:#DDF4EA;padding:.1rem .55rem;border-radius:6px;margin-left:.4rem;vertical-align:2px}
+
+/* Projects */
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem}
+.project{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:1.6rem;display:flex;flex-direction:column;box-shadow:var(--shadow);transition:transform .2s ease,border-color .2s ease}
+.project:hover{transform:translateY(-4px);border-color:var(--amber)}
+.project.wide{grid-column:1/-1;display:grid;grid-template-columns:auto 1fr;gap:1.5rem;align-items:center}
+.icon{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;margin-bottom:1rem;background:var(--tag)}
+.project.wide .icon{width:88px;height:88px;border-radius:22px;margin:0;background:var(--amber-bg)}
+.icon svg{width:26px;height:26px;stroke:var(--ink)}
+.project.wide .icon svg{width:42px;height:42px;stroke:var(--amber-ink)}
+.kind{font-size:.8rem;font-weight:700;color:var(--soft);margin-bottom:.3rem}
+.project p{color:var(--soft);flex:1;margin:.4rem 0 1rem}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem;list-style:none;margin:0;padding:0}
+.tags li{font-size:.8rem;font-weight:500;background:var(--tag);padding:.2rem .65rem;border-radius:7px}
+
+/* Skills */
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.skill{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:1.5rem;box-shadow:var(--shadow)}
+.skill h3{margin-bottom:1rem}
+.skill .tags li{font-size:.88rem;padding:.3rem .75rem}
+.tags li.learning{background:transparent;border:1.5px dashed var(--soft);color:var(--soft)}
+
+/* Education */
+.edu{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.edu .tcard h3{margin-top:.75rem}
+
+/* Contact */
+.contact{margin-top:5rem;background:var(--night);color:var(--on-night);padding:5rem 0;position:relative;overflow:hidden}
+.contact::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.08) 1px,transparent 1px);background-size:22px 22px;mask-image:linear-gradient(to top,#000 30%,transparent)}
+.contact .wrap{position:relative;text-align:center}
+.contact h2{font-family:"Young Serif",Georgia,serif;font-weight:400;font-size:clamp(2rem,5vw,3.2rem);line-height:1.1;margin:0 0 1rem}
+.contact p{color:var(--on-night-soft);max-width:52ch;margin:0 auto 2rem}
+.mail{display:inline-block;font-family:"Young Serif",Georgia,serif;font-size:clamp(1.25rem,4vw,2rem);text-decoration:none;color:var(--amber);border-bottom:2px solid rgba(242,179,86,.4);padding-bottom:.2rem;word-break:break-all}
+.mail:hover{border-color:var(--amber)}
+.contact .btns{justify-content:center;margin-top:2rem}
+.extra{display:flex;justify-content:center;gap:2.5rem;flex-wrap:wrap;margin-top:3rem;font-size:.92rem;color:var(--on-night-soft)}
+.extra b{display:block;color:var(--on-night);font-weight:700}
+footer{background:var(--night);color:var(--on-night-soft);font-size:.88rem;border-top:1px solid rgba(255,255,255,.08);padding:1.5rem 0}
+
+/* Responsive */
+@media (max-width:900px){
+  .hero .wrap{grid-template-columns:1fr;gap:3rem}
+  .module{transform:none;max-width:460px}
+  .stats .grid{grid-template-columns:repeat(2,1fr)}
+  .stat:nth-child(3){border-left:0}
+  .stat:nth-child(n+3){border-top:1px solid var(--line)}
+  .skills,.edu{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  nav ul li:not(:last-child){display:none}
+  .hero{padding:3.5rem 0 6.5rem}
+  .projects{grid-template-columns:1fr}
+  .project.wide{grid-template-columns:1fr}
+  .project.wide .icon{width:60px;height:60px;border-radius:16px}
+  .stat{padding:1.2rem}
+  .stat strong{font-size:1.8rem}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important}
+}
+</style>
+</head>
+
+<body>
+<!-- SEO: <nav>, <main>, <section>, <footer> help Google understand page structure -->
+<nav aria-label="Main">
+  <div class="wrap">
+    <a class="logo" href="#top"><i aria-hidden="true">VR</i>Veerabhadra R</a>
+    <ul>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="top">
+
+  <header class="hero">
+    <div class="wrap">
+      <div>
+        <span class="pill"><b aria-hidden="true"></b>Bangalore, open to new opportunities</span>
+        <!-- SEO: only ONE <h1> on the page, with your name and role -->
+        <h1>Veerabhadra R<small>Learning product developer at USDC Global</small></h1>
+        <p class="lead">I turn course ideas into interactive, SCORM-ready learning modules with JavaScript, HTML, CSS, and Django. Right now I’m levelling up in ReactJS and TypeScript.</p>
+        <div class="btns">
+          <a class="btn main" href="#experience">See my work</a>
+          <a class="btn ghost" href="#contact">Contact me</a>
+        </div>
+      </div>
+
+      <aside class="module" aria-label="Career progress summary">
+        <div class="module-top">
+          <!-- SEO: ALT TEXT describes the image for Google and screen readers -->
+          <img class="avatar" alt="Profile picture of Veerabhadra R" width="64" height="64"
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23F2B356'/%3E%3Ctext x='50%25' y='60%25' text-anchor='middle' font-family='Georgia,serif' font-size='26' fill='%231E1B4F'%3EVR%3C/text%3E%3C/svg%3E">
+          <div>
+            <h2>Learn By Doing modules</h2>
+            <p>Built at USDC Global</p>
+          </div>
+        </div>
+        <div class="meter-label"><span>Modules delivered</span><strong><span id="modcount">0</span>+</strong></div>
+        <div class="meter"><span id="meterfill"></span></div>
+        <ul class="checks">
+          <li>SCORM-compliant for any LMS</li>
+          <li>Promoted to Developer in 2024</li>
+          <li>MCA at JAIN University</li>
+          <li class="next">ReactJS and TypeScript, in progress</li>
+        </ul>
+        <div class="chiprow"><span>JavaScript</span><span>Django</span><span>HTML</span><span>CSS</span><span>SQL</span></div>
+      </aside>
+    </div>
+  </header>
+
+  <div class="stats">
+    <div class="wrap">
+      <div class="grid">
+        <div class="stat"><strong>150+</strong><span>learning modules built</span></div>
+        <div class="stat"><strong>3+ yrs</strong><span>at USDC Global</span></div>
+        <div class="stat"><strong>5</strong><span>projects shipped</span></div>
+        <div class="stat"><strong>5</strong><span>languages spoken</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SEO: each section uses an <h2> heading -->
+  <section id="experience">
+    <div class="wrap">
+      <div class="head">
+        <h2 class="title">Experience</h2>
+        <p>Building learning products that students actually enjoy using.</p>
+      </div>
+      <ul class="timeline">
+        <li>
+          <div class="tcard">
+            <div class="tmeta">
+              <div>
+                <h3>Developer – Learning Products <span class="badge">Promoted</span></h3>
+                <p class="where">USDC Global, Bangalore</p>
+              </div>
+              <span class="when">July 2024 – Present</span>
+            </div>
+            <ul>
+              <li>Promoted for strong performance and contributions to educational modules.</li>
+              <li>Led development of 150+ interactive Learn By Doing modules across programs.</li>
+              <li>Worked with cross-functional teams to deliver modules in a SCORM-compliant environment.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="tcard">
+            <div class="tmeta">
+              <div>
+                <h3>Executive</h3>
+                <p class="where">USDC Global, Bangalore</p>
+              </div>
+              <span class="when">March 2023 – June 2024</span>
+            </div>
+            <ul>
+              <li>Built and maintained interactive web modules with JavaScript, HTML, CSS, and Django.</li>
+              <li>Worked with subject matter experts to meet learning objectives and improve engagement.</li>
+              <li>Made sure every module was SCORM-compliant and ready for Learning Management Systems.</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <div class="head">
+        <h2 class="title">Projects</h2>
+        <p>Personal websites and academic work.</p>
+      </div>
+      <div class="projects">
+
+        <article class="project wide">
+          <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11c0-4 4-7 9-7s9 3 9 7v2H3z"/><path d="M5 13v5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-5"/><path d="M9 4.5c0 2 1 3.5 3 3.5s3-1.5 3-3.5"/></svg></div>
+          <div>
+            <div class="kind">Personal website</div>
+            <h3>Crumbnest Bakery</h3>
+            <p>An online bakery website built with Node.js and Express and hosted on Vercel, with SEO improvements so local customers can find it on Google.</p>
+            <ul class="tags"><li>Node.js</li><li>Express</li><li>Vercel</li><li>SEO</li></ul>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 5v14M17 5v14M3 10h4M3 14h4M17 10h4M17 14h4"/></svg></div>
+          <div class="kind">Personal website</div>
+          <h3>Cinevault movie booking</h3>
+          <p>A movie seat booking website where users pick a show and choose their seats.</p>
+          <ul class="tags"><li>Node.js</li><li>Express</li><li>JavaScript</li></ul>
+        </article>
+
+        <article class="project">
+          <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="12" r="2.5"/><path d="M6 8.5v7M8.3 7.2l7.4 3.6"/></svg></div>
+          <div class="kind">Major project</div>
+          <h3>Version Tracking System</h3>
+          <p>Manages software updates and changes, with every change documented, tracked, and easy to find later.</p>
+          <ul class="tags"><li>C#</li><li>.NET</li><li>MySQL</li></ul>
+        </article>
+
+        <article class="project">
+          <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/><path d="M9 12h2l1-2 1.5 4 1-2H16"/></svg></div>
+          <div class="kind">Mini project</div>
+          <h3>Quick Medical Assistance</h3>
+          <p>Connects users with nearby healthcare providers for fast help and clear communication.</p>
+          <ul class="tags"><li>PHP</li><li>CSS</li></ul>
+        </article>
+
+        <article class="project">
+          <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="13" height="10" rx="1.5"/><rect x="17" y="8" width="5" height="11" rx="1.2"/><path d="M6 18h6M9 14v4"/></svg></div>
+          <div class="kind">Testing project</div>
+          <h3>Compatibility Testing</h3>
+          <p>Tested software across platforms and devices with clear rules, detailed test cases, and fixes with the dev team.</p>
+          <ul class="tags"><li>Manual testing</li><li>Test cases</li></ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <div class="head">
+        <h2 class="title">Skills</h2>
+        <p>Dashed tags are skills I’m learning right now.</p>
+      </div>
+      <div class="skills">
+        <div class="skill">
+          <h3>Web development</h3>
+          <ul class="tags"><li>JavaScript</li><li>HTML</li><li>CSS</li><li>Django</li><li>SQL</li><li>Java</li><li class="learning">ReactJS</li><li class="learning">TypeScript</li></ul>
+        </div>
+        <div class="skill">
+          <h3>Learning technology</h3>
+          <ul class="tags"><li>SCORM</li><li>LMS integration</li><li>Interactive modules</li><li>Working with SMEs</li></ul>
+        </div>
+        <div class="skill">
+          <h3>Tools and testing</h3>
+          <ul class="tags"><li>Git</li><li>VS Code</li><li>Figma</li><li>Manual testing</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="wrap">
+      <div class="head">
+        <h2 class="title">Education</h2>
+        <p>Degrees and certifications.</p>
+      </div>
+      <div class="edu">
+        <div class="tcard"><span class="when">2024 – Present</span><h3>Master of Computer Applications</h3><p class="where">JAIN University, Bangalore</p></div>
+        <div class="tcard"><span class="when">2018 – 2021</span><h3>BSc Computer Science</h3><p class="where">RJS First Grade College, Bangalore</p></div>
+        <div class="tcard"><span class="when">Certification</span><h3>Manual Testing, SQL, Java</h3><p class="where">Qspiders, Bengaluru</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2>Let’s build something people love to learn from.</h2>
+      <p>Looking for a developer for learning products or web projects? I’d be happy to hear from you.</p>
+      <a class="mail" href="mailto:bhadrav774@gmail.com">bhadrav774@gmail.com</a>
+      <div class="btns">
+        <a class="btn main" href="mailto:bhadrav774@gmail.com">Send an email</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/veera-bhadra-r-34a420257" rel="me">View LinkedIn</a>
+      </div>
+      <div class="extra">
+        <div><b>Languages</b>English, Tamil, Kannada, Hindi, Telugu</div>
+        <div><b>Interests</b>Travelling, photography, gardening</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">© <span id="year">2026</span> Veerabhadra R, Bangalore.</div>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+(function(){
+  var target = 150, el = document.getElementById("modcount"), bar = document.getElementById("meterfill");
+  var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduce) { el.textContent = target; bar.style.width = "100%"; return; }
+  setTimeout(function(){ bar.style.width = "100%"; }, 250);
+  var start = null;
+  function step(t){
+    if (!start) start = t;
+    var p = Math.min((t - start) / 1600, 1);
+    el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3)));
+    if (p < 1) requestAnimationFrame(step);
+  }
+  setTimeout(function(){ requestAnimationFrame(step); }, 250);
+})();
+</script>
+</body>
+</html>
